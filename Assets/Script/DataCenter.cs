@@ -27,14 +27,11 @@ public class DataCenter : MonoBehaviour
 
     void Awake()
     {
-        // 중복생성시 자신을 파괴한다.
         if (instance != null)
         {
             Destroy(gameObject);
             return;
         }
-
-        // 중복이 아니면 자신을 instance에 등록한다.
         instance = this;
         DontDestroyOnLoad(gameObject);
 
@@ -43,7 +40,6 @@ public class DataCenter : MonoBehaviour
 
     public void LoadGameData()
     {
-        // 랭킹 데이터를 읽기
         string filePath = Application.persistentDataPath + '/' + dataFileName;
 
         if (File.Exists(filePath))
@@ -119,4 +115,4 @@ public class DataCenter : MonoBehaviour
     {
         gameData.isShowRange = value;
     }
-}
+} 

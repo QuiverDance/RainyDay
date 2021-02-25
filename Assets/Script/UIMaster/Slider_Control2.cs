@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+ 
 public class Slider_Control2 : MonoBehaviour
 {
     private Slider slider;

@@ -75,4 +75,4 @@ public class Item_Move : MonoBehaviour
             circleCollider2D.enabled = false;
         }
     }
-}
+} 

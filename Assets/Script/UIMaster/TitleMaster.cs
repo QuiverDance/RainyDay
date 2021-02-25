@@ -1,10 +1,9 @@
-﻿//using Packages.Rider.Editor;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+ 
 public class TitleMaster : MonoBehaviour
 {
     public GameObject gameStartScreen;
@@ -13,9 +12,6 @@ public class TitleMaster : MonoBehaviour
     public GameObject gameSettingScreen;
     public GameObject gameSettingScreen2;
     public GameObject gameExitScreen;
-    //public GameObject rankingScreen1;
-    //public GameObject rankingScreen2;
-    //public GameObject rankingsystem;
 
     private AudioSource audioSource;
     public AudioClip sound;
@@ -31,8 +27,6 @@ public class TitleMaster : MonoBehaviour
         gameSettingScreen.SetActive(false);
         gameSettingScreen2.SetActive(false);
         gameExitScreen.SetActive(false);
-        //rankingScreen1.SetActive(false);
-        //rankingScreen2.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = sound;
@@ -57,10 +51,6 @@ public class TitleMaster : MonoBehaviour
             {
                 RecoredConfirmButtonPush();
             }
-            /*else if (rankingScreen1.activeInHierarchy == true || rankingScreen1.activeInHierarchy == true)
-            {
-                RankingConfirmButtonPush();
-            }*/
             else if (gameSettingScreen.activeInHierarchy == true || gameSettingScreen2.activeInHierarchy == true)
             {
                 GameSettingScreenConfirmButtonPush();
@@ -99,17 +89,6 @@ public class TitleMaster : MonoBehaviour
         recordScreen.SetActive(true);
         audioSource.Play();
     }
-    /*
-    public void RankingButtonPush()
-    {
-        rankingScreen1.SetActive(true);
-        audioSource.Play();
-        rankingsystem.GetComponent<Ranking>().RankingRecord();
-        rankingsystem.GetComponent<Ranking>().AllRecordRead();
-        rankingsystem.GetComponent<Ranking2>().RankingRecord();
-        rankingsystem.GetComponent<Ranking2>().AllRecordRead();
-        rankingsystem.GetComponent<Ranking>().TextRecord();
-    }*/
 
     public void RecoredConfirmButtonPush()
     {
@@ -190,26 +169,4 @@ public class TitleMaster : MonoBehaviour
     {
         Application.Quit();
     }
-    /*
-    public void RankingConfirmButtonPush()
-    {
-        rankingScreen1.SetActive(false);
-        rankingScreen2.SetActive(false);
-        audioSource.Play();
-    }
-   
-    public void RankingNextButtionPush()
-    {
-        rankingsystem.GetComponent<Ranking2>().TextRecord();
-        rankingScreen1.SetActive(false);
-        rankingScreen2.SetActive(true);
-        audioSource.Play();
-    }
-    public void RankingBackButtionPush()
-    {
-        rankingsystem.GetComponent<Ranking>().TextRecord();
-        rankingScreen2.SetActive(false);
-        rankingScreen1.SetActive(true);
-        audioSource.Play();
-    }*/
 }

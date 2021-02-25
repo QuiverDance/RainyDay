@@ -24,4 +24,4 @@ public class GameData
         hardScore.Add(0.0f);
         hardScore.Add(0.0f);
     }
-}
+} 

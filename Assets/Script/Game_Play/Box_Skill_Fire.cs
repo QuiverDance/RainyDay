@@ -58,7 +58,7 @@ public class Box_Skill_Fire : MonoBehaviour
             }
         }
     }
-
+     
     public void Remove()
     {
         for (int i = 0; i < max_skill; i++)

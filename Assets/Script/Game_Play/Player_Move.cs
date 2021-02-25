@@ -43,7 +43,6 @@ public class Player_Move : MonoBehaviour
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
 
-        // 휴대폰 기울기 이동
         Vector3 direction = Vector3.zero;
         direction.x = Input.acceleration.x * speed;
         direction.y = (Input.acceleration.y + 0.3f) * speed;

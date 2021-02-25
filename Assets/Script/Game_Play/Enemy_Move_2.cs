@@ -51,4 +51,4 @@ public class Enemy_Move_2 : MonoBehaviour
             other.GetComponent<Player_Move>().Die();
         }
     }
-}
+} 

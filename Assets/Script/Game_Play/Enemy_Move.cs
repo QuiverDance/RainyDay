@@ -56,4 +56,4 @@ public class Enemy_Move : MonoBehaviour
             circleCollider2D.enabled = false;
         }
     }
-} 
+}  

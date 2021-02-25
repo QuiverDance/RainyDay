@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class Box_Skill_Move : MonoBehaviour
 {
     public float count;

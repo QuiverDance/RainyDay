@@ -105,4 +105,4 @@ public class Enemy_Fire : MonoBehaviour
         yield return new WaitForSeconds(60);
         harder = true;
     }
-}
+} 

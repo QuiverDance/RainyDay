@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class Set_Position : MonoBehaviour
 {
     public GameObject player;
@@ -14,7 +14,6 @@ public class Set_Position : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         position.x = player.transform.position.x;

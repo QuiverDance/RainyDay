@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class Item_Generate : MonoBehaviour
 {
     public int item_number = 4;

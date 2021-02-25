@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class BGM_Control : MonoBehaviour
 {
     private AudioSource audioSource;
@@ -16,7 +16,6 @@ public class BGM_Control : MonoBehaviour
         audioSource.Play();
     }
 
-    // Update is called once per frame
     void Update()
     {
         audioSource.volume = DataCenter.instance.gameData.volume;

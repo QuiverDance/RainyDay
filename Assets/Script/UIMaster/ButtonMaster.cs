@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+ 
 public class ButtonMaster : MonoBehaviour
 {
     public GameObject pauseScreen;
@@ -20,7 +20,6 @@ public class ButtonMaster : MonoBehaviour
 
     public void Update()
     {
-        // 휴대폰 뒤로가기 버튼
         if (Input.GetKeyDown(KeyCode.Escape) && DataCenter.instance.gameData.isGameEnd == false)
         {
             audioSource.Play();
@@ -38,7 +37,6 @@ public class ButtonMaster : MonoBehaviour
 
     public void MainMenuButtonPush()
     {
-        // 시간 정지 해제
         if (Time.timeScale == 0)
             Time.timeScale = 1;
 
@@ -51,7 +49,6 @@ public class ButtonMaster : MonoBehaviour
 
     public void RestartButtonPush()
     {
-        // 시간 정지 해제
         if (Time.timeScale == 0)
             Time.timeScale = 1;
 
@@ -63,7 +60,7 @@ public class ButtonMaster : MonoBehaviour
 
     public void PauseButtonPush()
     {
-        Time.timeScale = 0; // 멈춤
+        Time.timeScale = 0;
         pauseScreen.SetActive(true);
 
         ADinit.instance.ShowBanner();
