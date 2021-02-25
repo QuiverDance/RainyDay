@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Water
+  - Fire
+  - Item
+  - Coal
+  - GunPowder
+  - Oil
+  - Co2
+  - CoalSkill
+  - GunPowderSkill
+  - OilSkill
+  - Oxygen
+  - OxygenSkill
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Button
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: CharacterLayer
+    uniqueID: 2250110347
+    locked: 0
+  - name: RangeLayer
+    uniqueID: 3406452649
+    locked: 0
+  - name: CoalLayer
+    uniqueID: 3023310611
+    locked: 0
+  - name: OilLayer
+    uniqueID: 501990091
+    locked: 0
+  - name: GunpowderLayer
+    uniqueID: 3700295685
+    locked: 0
+  - name: OxygenLayer
+    uniqueID: 4267588371
+    locked: 0
+  - name: UILayer
+    uniqueID: 3207972773
+    locked: 0
